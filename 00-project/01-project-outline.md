@@ -2,6 +2,7 @@
 Name: Makai Tímea
 Neptun: KFICIY
 ID: 2026-LA-05
+GitHub: https://github.com/MakaiTimea/KFICIY_Projekt_1
 ---
 
 ## Nyelvtanulási segéd egyéni haladáskövetéssel
@@ -35,3 +36,4 @@ A projekt célja egy adatbázis-központú, webes nyelvtanulási segéd megvaló
 -   Hanganyagok és kiejtésfeldolgozás az első verzióban.
 -   Összetett mobilalkalmazás.
 ## Jegyzetek
+A fejlesztés első lépése az adatmodell és a tanulási logika megtervezése. Ezt követi az adatbázis és a kiválasztási stratégiák megvalósítása, majd az ezekre épülő webes felület elkészítése.
