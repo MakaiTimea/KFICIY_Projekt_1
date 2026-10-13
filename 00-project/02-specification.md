@@ -75,7 +75,7 @@ Prioritás: **Kötelező** = a projekt teljesítéséhez szükséges; **Ajánlot
 ## 4. Üzleti szabályok és korlátok
 
 | Szabály vagy korlát | Indoklás |
-|:---|:---|:---|
+|:---|:---|
 | A rendszer egy választott idegen nyelv, jelen esetben az angol tanulását támogatja. | A projekt terjedelme így kezelhető marad. |
 | Az adatmodellnek legalább harmadik normálformának kell megfelelnie. | Ez segít elkerülni a felesleges adatismétlést és az adateltéréseket. |
 | A felhasználói válaszokat és a gyakorlási előzményeket meg kell őrizni. | Ezek szükségesek a tanulási állapot és a prioritás meghatározásához. |
@@ -92,7 +92,7 @@ A felhasználói felület az adatbázisban megvalósított logikát használja a
 ## 6. Nem funkcionális követelmények
 
 | Követelmény | Ellenőrzés módja |
-|:---|:---|:---|
+|:---|:---|
 | A rendszer normál használat során a gyakorlófeladatokat és az eredményeket elfogadható időn belül jelenítse meg. | A feladatbetöltés és a válaszmentés idejének mérése több teszt során. |
 | A tanuló különösebb útmutatás nélkül el tudjon indítani egy gyakorlást és meg tudja tekinteni az eredményeit. | Egyszerű használhatósági teszt egy olyan személlyel, aki korábban nem használta az alkalmazást. |
 | A hibás vagy sikertelen mentés ne jelenjen meg sikeres műveletként. | Hibás bemenetekkel végzett tesztek. |
