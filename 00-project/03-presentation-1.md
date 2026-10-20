@@ -9,7 +9,7 @@ Neptun:  KFICIY
 Témavezető:  Lénárt Anett
 Projektazonosító: 2026-LA-05
 
-----------
+---
 
 ## Probléma
 
@@ -18,7 +18,7 @@ Projektazonosító: 2026-LA-05
 -   A személyre szabáshoz meg kell őrizni a válaszokat és a gyakorlási előzményeket.
 -   **Fő kérdés:** mely tananyagelemeket érdemes a következő alkalommal előrevenni?
 
-----------
+---
 
 ## Célfelhasználók
 
@@ -28,7 +28,7 @@ Projektazonosító: 2026-LA-05
 -   Válaszadás és azonnali visszajelzés.
 -   Saját eredmények és problémás tananyagelemek áttekintése.
 
-----------
+---
 
 ## Korlátok
 
@@ -37,7 +37,7 @@ Projektazonosító: 2026-LA-05
 -   **Adatmodell:** legalább 10 kapcsolódó tábla, legalább 3. normálforma.
 -   **Üzleti logika:** a gyakorlási sorrendet az adatbázis állítja elő.
 
-----------
+---
 
 ## Tervezett hatókör
 
@@ -55,7 +55,7 @@ Projektazonosító: 2026-LA-05
 -   Hanganyagok és kiejtésértékelés.
 -   Több nyelv egyidejű támogatása.
 
-----------
+---
 
 ## Tervezett technikai megoldás
 
@@ -65,7 +65,7 @@ Projektazonosító: 2026-LA-05
 -   **PL/SQL-logika:** prioritásszámítás és a következő gyakorlási sor összeállítása.
 -   A prioritás figyelembe veszi a helyes/hibás válaszokat, az utolsó gyakorlás idejét, az ismétlésszámot és a nehézséget.
 
-----------
+---
 
 ## Prioritásszámítás – egyszerű stratégia
 
@@ -80,7 +80,7 @@ Projektazonosító: 2026-LA-05
 
 **Cél:** egyszerű, átlátható referencia-módszer kialakítása.
 
-----------
+---
 
 ## Prioritásszámítás – súlyozott stratégia
 
@@ -104,7 +104,7 @@ A prioritási pontszám a tanuló korábbi teljesítménye alapján változik.
 
 **Cél:** a több ismétlést igénylő tananyagelemek előtérbe helyezése.
 
-----------
+---
 
 ## Kezdeti felhasználói utak
 
@@ -134,7 +134,7 @@ flowchart LR
 
 **Hibakezelés:** érvénytelen válasz, sikertelen mentés, hiányzó előzmények.
 
-----------
+---
 
 ## Következő lépések
 -   Visszajelzések beépítése a specifikációba
