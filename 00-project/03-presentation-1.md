@@ -5,8 +5,11 @@ project_outline: "[[00-project/01-project-outline]]"
 # Nyelvtanulási segéd egyéni haladáskövetéssel
 
 Szerző:  Makai Tímea
+
 Neptun:  KFICIY
+
 Témavezető:  Lénárt Anett
+
 Projektazonosító: 2026-LA-05
 
 ---
