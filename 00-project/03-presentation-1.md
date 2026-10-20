@@ -16,10 +16,10 @@ Projektazonosító: 2026-LA-05
 
 ## Probléma
 
--   A tanulók nem minden szót és kifejezést sajátítanak el ugyanolyan gyorsan.
--   Az egységes gyakorlási sorrend nem veszi kellően figyelembe az egyéni nehézségeket.
--   A személyre szabáshoz meg kell őrizni a válaszokat és a gyakorlási előzményeket.
--   **Fő kérdés:** mely tananyagelemeket érdemes a következő alkalommal előrevenni?
+-   Eltérő tanulási ütem
+-   Egyéni nehézségek figyelmen kívül hagyása  
+-   Válaszok és előzmények megőrzése
+-   **Fő kérdés:** következőként gyakorlandó elemek kiválasztása
 
 ---
 
@@ -27,61 +27,61 @@ Projektazonosító: 2026-LA-05
 
 **Tanuló**
 
--   Angol szavak és kifejezések gyakorlása.
--   Válaszadás és azonnali visszajelzés.
--   Saját eredmények és problémás tananyagelemek áttekintése.
+-   Angol szavak és kifejezések gyakorlása
+-   Válaszadás, azonnali visszajelzés
+-   Eredmények és problémás elemek áttekintése
 
 ---
 
 ## Korlátok
 
--   **Egy nyelv:** az első változat az angol tanulását támogatja.
--   **Adatbázis:** relációs modell, tervezetten Oracle Database és PL/SQL.
--   **Adatmodell:** legalább 10 kapcsolódó tábla, legalább 3. normálforma.
--   **Üzleti logika:** a gyakorlási sorrendet az adatbázis állítja elő.
+-   **Nyelv:** angol
+-   **Adatbázis:** Oracle Database, PL/SQL
+-   **Adatmodell:** legalább 10 tábla, 3. normálforma
+-   **Üzleti logika:** adatbázis-alapú gyakorlási sorrend
 
 ---
 
 ## Tervezett hatókör
 
+
 **Benne van**
 
--   Tananyag: szavak/kifejezések, jelentések, példamondatok, témakörök, nehézségi szintek.
--   Felhasználók, gyakorlási alkalmak, feladatok, válaszok és tanulási állapotok kezelése.
--   Két kiválasztási stratégia és összehasonlításuk.
--   Legalább 10 összetett SQL-lekérdezés és legalább 5 lekérdezés teljesítményvizsgálata.
--   Reprodukálható tesztadat több tízezer válasszal és gyakorlási eseménnyel.
+-   Tananyag: szavak, kifejezések, jelentések, példamondatok
+-   Témakörök, nehézségi szintek
+-   Felhasználók, gyakorlások, feladatok, válaszok, tanulási állapotok
+-   2 kiválasztási stratégia összehasonlítása
+    
 
 **Nincs benne**
 
--   Közösségi funkciók.
--   Hanganyagok és kiejtésértékelés.
--   Több nyelv egyidejű támogatása.
+-   Közösségi funkciók
+-   Hanganyagok, kiejtésértékelés
+-   Többnyelvű támogatás
 
 ---
 
 ## Tervezett technikai megoldás
 
--   **Webes felület:** gyakorlás és haladás megjelenítése.
--   **Szerveroldali réteg:** a felhasználói kérések továbbítása és ellenőrzése.
--   **Oracle Database:** tananyag, válaszok és előzmények tárolása.
--   **PL/SQL-logika:** prioritásszámítás és a következő gyakorlási sor összeállítása.
--   A prioritás figyelembe veszi a helyes/hibás válaszokat, az utolsó gyakorlás idejét, az ismétlésszámot és a nehézséget.
+-   **Webes felület:** gyakorlás, haladáskövetés
+-   **Szerveroldal:** kérések továbbítása, ellenőrzés
+-   **Oracle Database:** tananyag, válaszok, előzmények
+-   **PL/SQL:** prioritásszámítás, feladatkiválasztás
+-   **Prioritási szempontok:**
+    -   Helyes / hibás válaszok
+    -   Utolsó gyakorlás időpontja
+    -   Ismétlésszám
+    -   Nehézségi szint
 
 ---
 
 ## Prioritásszámítás – egyszerű stratégia
 
--   Minden tananyagelem azonos, **1 pontos alapértéket** kap.
-    
--   Kiválasztás: legutóbbi gyakorlás időpontja alapján
-    
--   Előny: régebben gyakorolt és a még nem gyakorolt elemek
-    
--   Azonos időpont esetén egy másodlagos rendezési szabály dönt.
-    
-
-**Cél:** egyszerű, átlátható referencia-módszer kialakítása.
+-   **Alappontszám:** 1 pont / tananyagelem
+-   **Rendezés:** utolsó gyakorlás időpontja
+-   **Előnyben:** régebben gyakorolt, még nem gyakorolt elemek
+-   **Döntetlen esetén:** másodlagos rendezési szabály
+-   **Cél:** egyszerű, átlátható referencia-módszer
 
 ---
 
@@ -98,14 +98,10 @@ A prioritási pontszám a tanuló korábbi teljesítménye alapján változik.
 | Nehéz tananyagelem | +2 |
 | Legutóbbi válasz helyes | −1 |
 
--   A pontszám nem lehet negatív.
-    
--   A nagyobb pontszám magasabb prioritást jelent.
-    
--   Azonos pontszám esetén a régebben gyakorolt elem kerül előre.
-    
-
-**Cél:** a több ismétlést igénylő tananyagelemek előtérbe helyezése.
+-   **Minimum:** 0 pont
+-   **Nagyobb pontszám:** magasabb prioritás
+-   **Azonos pontszám:** régebben gyakorolt elem előre
+-   **Cél:** több ismétlést igénylő elemek előtérbe helyezése
 
 ---
 
